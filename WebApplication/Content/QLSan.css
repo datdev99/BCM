@@ -1,0 +1,287 @@
+﻿.head-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head-navbar .txt {
+    font-size: 20px;
+    font-weight: 700;
+    color: #5BC0DE;
+    margin: 0;
+}
+
+.tbl {
+    overflow-x: scroll;
+    margin-top: 10px;
+    border-top: 2px solid #000;
+}
+
+.tbl table thead tr th, .tbl table tbody tr td {
+    outline: 1px solid #000;
+    min-width: calc(100vw / 10);
+    width: calc(100vw / 10);
+    font-weight: 700;
+    text-align: center;
+}
+
+.tbl table tbody tr td.vanglai {
+    background-color: #f57373;
+}
+
+.tbl table tbody tr td.codinh {
+    background-color: #b9b9ed;
+}
+
+.datsan .item {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.datsan .item p {
+    width: 150px;
+    margin: 0;
+}
+
+.datsan .item input {
+    padding: 5px;
+    outline: none;
+    border-radius: 8px;
+    width: 100%;
+    border: 1px solid #1eb8a0;
+}
+
+.datsan .san {
+    display: flex;
+    gap: 10px;
+}
+
+.datsan .san >div{
+    width: 31%;
+}
+
+.datsan .san >div select{
+    width: 100%;
+    padding: 6px 10px;
+    border-radius: 8px;
+}
+
+.datsan .item .Checkradio {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 40%;
+}
+
+.datsan .item .Checkradio input {
+    width: 15px;
+    height: 15px;
+    margin: 0;
+}
+
+.datsan .item .Checkradio label {
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+textarea {
+    width: 100%;
+    height: 65px;
+    resize: none;
+    outline: none;
+    border: 1px solid #1eb8a0;
+    border-radius: 8px;
+}
+
+.tbl #tbody tr {
+    height: calc((100vh / 8) - 17px);
+}
+
+.sticky {
+    position: sticky;
+    left:0;
+    width: 120px;
+    background: #fff;
+    z-index: 9;
+}
+
+.sticky.color {
+    background: #a7a7a7;
+    color: #fff;
+}
+
+#radioCoDinh {
+    display: none;
+}
+
+#radioCoDinh.show {
+    display: flex !important;
+}
+
+#multitab {
+    position: relative;
+}
+
+#thongke {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.tab-content > .tab-pane {
+    padding-top: 10px;
+}
+
+
+/* Style the date input */
+input[type="date"] {
+    appearance: none; /* Remove default styling */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 6px;
+    font-size: 14px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #fff;
+    margin-left: 15px;
+}
+
+/* Adjust the height and width */
+input[type="date"] {
+    height: 35px;
+    width: 150px;
+}
+
+/* Remove focus outline */
+input[type="date"]:focus {
+    outline: none;
+    border-color: #66afe9;
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.6);
+}
+
+/* Placeholder color */
+input[type="date"]::-webkit-input-placeholder {
+    color: #999;
+}
+
+input[type="date"]::-moz-placeholder {
+    color: #999;
+}
+
+input[type="date"]:-ms-input-placeholder {
+    color: #999;
+}
+
+input[type="date"]:-moz-placeholder {
+    color: #999;
+}
+
+.quayban-content {
+    display: flex;
+    margin-top: 10px;
+}
+
+.quayban-content .banner {
+     width: 350px;
+}
+
+.quayban-content img {
+    height: calc(100vh - 100px);
+    width: 100%;
+    object-fit: cover;
+}
+
+#menu1 .sidebar {
+    width: 300px;
+    max-height: calc(100vh - 100px);
+    height: calc(100vh - 100px);
+    overflow: hidden;
+    border: 1px solid #000;
+    margin-right: 15px;
+}
+
+.tbl-quayban {
+    width: calc(100% - 650px);
+    margin-right: 15px;
+    max-height: calc(100vh - 100px);
+    height: calc(100vh - 100px);
+/*    overflow-y: scroll;*/
+}
+
+.action button {
+    margin-right: 15px;
+}
+
+#menu1 .sidebar button {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 18px;
+    height: 40px;
+    background: #5cff3a;
+    font-weight: 700;
+}
+
+#menu1 .sidebar p {
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.tbl-quayban table {
+    width: 100%;
+}
+
+#menu1 .sidebar p {
+    border-bottom: 1px solid #000;
+}
+
+#lst-dichvu {
+    list-style: none;
+    padding: 0;
+}
+
+#lst-dichvu li {
+    padding: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    transition: .3s;
+}
+
+#lst-dichvu li:hover {
+    color: #3e8bcf;
+}
+
+.tbl-quayban table th {
+    font-weight: 700;
+    font-size: 16px;
+    background: #19ab8b;
+    padding: 5px;
+}
+
+.tbl-quayban table td {
+    font-size: 14px;
+    padding: 5px;
+}
+
+.tbl-quayban table th, td {
+    outline: 1px solid #000;
+    text-align: center;
+}
+
+#tfoot-dichvu {
+    background: #c36464;
+    color: #fff;
+    font-weight: 700;
+}
+
+@media (min-width: 768px) {
+    .modal-dialog {
+        width: 400px !important;
+        margin: 30px auto;
+    }
+}
